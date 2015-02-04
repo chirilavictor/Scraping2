@@ -1,0 +1,7 @@
+<h1>Restaurante#meniu_hora</h1>
+<p>Find me in app/views/restaurante/meniu_hora.html.erb</p>
+<%= Time.now.to_i %><br />
+
+<% @meniu3.each do |x| %>
+<p><%= x.id %> | <%= x.categorie %> | <%= x.updated_at.to_i %></p>
+<% end %>
