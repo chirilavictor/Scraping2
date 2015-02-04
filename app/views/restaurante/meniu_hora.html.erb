@@ -1,7 +1,9 @@
 <h1>Restaurante#meniu_hora</h1>
 <p>Find me in app/views/restaurante/meniu_hora.html.erb</p>
-<%= Time.now.to_i %><br />
-
-<% @meniu3.each do |x| %>
-<p><%= x.id %> | <%= x.categorie %> | <%= x.updated_at.to_i %></p>
+<p>Time.now.to_i acum: <%= Time.now.to_i %></p>
+<table border="1">
+	<tr><th>ID</th><th>Categorie</th><th>Time.now.to_i când a fost actualizat</th></tr>
+	<% @meniu_hora.each do |x| %>
+	<tr><td><%= x.id %></td><td><%= x.categorie %></td><td><%= x.updated_at.to_i %></td></tr>
 <% end %>
+</table>
