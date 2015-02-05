@@ -1,0 +1,44 @@
+<h1>Restaurante#meniu_davinci</h1>
+<p>Find me in app/views/restaurante/meniu_davinci.html.erb</p>
+
+<%= Time.now.to_i %><br />
+
+<h3>Salate</h3>
+<table border="1">
+	<tr><th>ID</th><th>Fel mancare</th><th>Descriere</th><th>Cantitate</th><th>Pret</th><th>updated_at</th></tr>
+	<% @davinci_salate.each do |x| %>
+	<tr><td><%= x.id %></td><td><%= x.fel_mancare %></td><td><%= x.descriere %></td><td><%= x.cantitate %></td><td><%= x.pret %> lei </td><td><%= x.updated_at.to_i %></td></tr>
+<% end %>
+</table>
+
+<h3>Peste</h3>
+<table border="1">
+	<tr><th>ID</th><th>Fel mancare</th><th>Descriere</th><th>Cantitate</th><th>Pret</th><th>updated_at</th></tr>
+	<% @davinci_peste.each do |x| %>
+	<tr><td><%= x.id %></td><td><%= x.fel_mancare %></td><td><%= x.descriere %></td><td><%= x.cantitate %></td><td><%= x.pret %> lei </td><td><%= x.updated_at.to_i %></td></tr>
+<% end %>
+</table>
+
+<h3>Supe / Paste</h3>
+<table border="1">
+	<tr><th>ID</th><th>Fel mancare</th><th>Descriere</th><th>Cantitate</th><th>Pret</th><th>updated_at</th></tr>
+	<% @davinci_paste.each do |x| %>
+	<tr><td><%= x.id %></td><td><%= x.fel_mancare %></td><td><%= x.descriere %></td><td><%= x.cantitate %></td><td><%= x.pret %> lei </td><td><%= x.updated_at.to_i %></td></tr>
+<% end %>
+</table>
+
+<h3>Carne</h3>
+<table border="1">
+	<tr><th>ID</th><th>Fel mancare</th><th>Descriere</th><th>Cantitate</th><th>Pret</th><th>updated_at</th></tr>
+	<% @davinci_carne.each do |x| %>
+	<tr><td><%= x.id %></td><td><%= x.fel_mancare %></td><td><%= x.descriere %></td><td><%= x.cantitate %></td><td><%= x.pret %> lei </td><td><%= x.updated_at.to_i %></td></tr>
+<% end %>
+</table>
+
+<h3>Desert</h3>
+<table border="1">
+	<tr><th>ID</th><th>Fel mancare</th><th>Descriere</th><th>Cantitate</th><th>Pret</th><th>updated_at</th></tr>
+	<% @davinci_desert.each do |x| %>
+	<tr><td><%= x.id %></td><td><%= x.fel_mancare %></td><td><%= x.descriere %></td><td><%= x.cantitate %></td><td><%= x.pret %> lei </td><td><%= x.updated_at.to_i %></td></tr>
+<% end %>
+</table>

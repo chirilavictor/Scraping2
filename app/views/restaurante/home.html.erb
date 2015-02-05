@@ -1,8 +1,12 @@
 <h1>Restaurante#home</h1>
 <p>Find me in app/views/restaurante/home.html.erb</p>
 <br />
+<%= @hora_paste %>
 <h3>Restaurant Hora</h3>
+<p><%= link_to "Afisează meniu", 'hora' %> | <%= link_to "Extrage meniu acum", 'extrage_hora' %></p>
+<p><%= @mesaj_actualizare_hora %></p>
 
-<p><%= link_to "Afisează meniu", 'hora' %> | <%= link_to "Extrage meniu acum", 'extrage' %></p>
-<p><%= @mesaj_actualizare %></p>
+<h3>Restaurant Davinci</h3>
+<p><%= link_to "Afiseaza meniu", 'davinci' %> | <%= link_to "Extrage meniu acum", 'extrage_davinci' %></p>
+<p><%= @mesaj_actualizare_davinci %></p>
 

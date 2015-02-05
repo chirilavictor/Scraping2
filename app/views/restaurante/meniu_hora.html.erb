@@ -1,9 +1,43 @@
 <h1>Restaurante#meniu_hora</h1>
 <p>Find me in app/views/restaurante/meniu_hora.html.erb</p>
 <p>Time.now.to_i acum: <%= Time.now.to_i %></p>
+
+<h3>Salate</h3>
 <table border="1">
-	<tr><th>ID</th><th>Categorie</th><th>Time.now.to_i când a fost actualizat</th></tr>
-	<% @meniu_hora.each do |x| %>
-	<tr><td><%= x.id %></td><td><%= x.categorie %></td><td><%= x.updated_at.to_i %></td></tr>
+	<tr><th>ID</th><th>Fel mancare</th><th>Cantitate</th><th>Pret</th><th>updated_at</th></tr>
+	<% @hora_salate.each do |x| %>
+	<tr><td><%= x.id %></td><td><%= x.fel_mancare %></td><td><%= x.cantitate %></td><td><%= x.pret %></td><td><%= x.updated_at.to_i %></td></tr>
+<% end %>
+</table>
+
+<h3>Peste</h3>
+<table border="1">
+	<tr><th>ID</th><th>Fel mancare</th><th>Cantitate</th><th>Pret</th><th>updated_at</th></tr>
+	<% @hora_peste.each do |x| %>
+	<tr><td><%= x.id %></td><td><%= x.fel_mancare %></td><td><%= x.cantitate %></td><td><%= x.pret %></td><td><%= x.updated_at.to_i %></td></tr>
+<% end %>
+</table>
+
+<h3>Paste</h3>
+<table border="1">
+	<tr><th>ID</th><th>Fel mancare</th><th>Cantitate</th><th>Pret</th><th>updated_at</th></tr>
+	<% @hora_paste.each do |x| %>
+	<tr><td><%= x.id %></td><td><%= x.fel_mancare %></td><td><%= x.cantitate %></td><td><%= x.pret %></td><td><%= x.updated_at.to_i %></td></tr>
+<% end %>
+</table>
+
+<h3>Desert</h3>
+<table border="1">
+	<tr><th>ID</th><th>Fel mancare</th><th>Cantitate</th><th>Pret</th><th>updated_at</th></tr>
+	<% @hora_desert.each do |x| %>
+	<tr><td><%= x.id %></td><td><%= x.fel_mancare %></td><td><%= x.cantitate %></td><td><%= x.pret %></td><td><%= x.updated_at.to_i %></td></tr>
+<% end %>
+</table>
+
+<h3>Meniu complet Restaurant Hora</h3>
+<table border="1">
+<tr><th>ID</th><th>Categorie</th><th>Fel mâncare</th><th>Cantitate</th><th>Pret</th></tr>
+<% @meniu_hora.each do |x| %>
+	<tr><td><%= x.id %></td><td><%= x.categorie %></td><td><%= x.fel_mancare %></td><td><%= x.cantitate %></td><td><%= x.pret %></td></tr>
 <% end %>
 </table>

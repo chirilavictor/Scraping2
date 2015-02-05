@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fel_mancare: MyString
+  pret: 1
+  descriere: MyString
+  cantitate: MyString
+
+two:
+  fel_mancare: MyString
+  pret: 1
+  descriere: MyString
+  cantitate: MyString

@@ -11,7 +11,52 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150204103400) do
+ActiveRecord::Schema.define(version: 20150205131336) do
+
+  create_table "davinci_carnes", force: true do |t|
+    t.string   "fel_mancare"
+    t.integer  "pret"
+    t.string   "descriere"
+    t.string   "cantitate"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "davinci_deserts", force: true do |t|
+    t.string   "fel_mancare"
+    t.integer  "pret"
+    t.string   "descriere"
+    t.string   "cantitate"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "davinci_pastes", force: true do |t|
+    t.string   "fel_mancare"
+    t.integer  "pret"
+    t.string   "descriere"
+    t.string   "cantitate"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "davinci_pestes", force: true do |t|
+    t.string   "fel_mancare"
+    t.integer  "pret"
+    t.string   "descriere"
+    t.string   "cantitate"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "davinci_salates", force: true do |t|
+    t.string   "fel_mancare"
+    t.integer  "pret"
+    t.string   "descriere"
+    t.string   "cantitate"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "rest_horas", force: true do |t|
     t.string   "categorie"
